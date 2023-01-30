@@ -35,3 +35,14 @@ Go to Edit --> Preferences.
 Click "SQL Editor" tab and uncheck "Safe Updates" (rejects UPDATEs and DELETEs with no restrictions) check box.
 Query --> Reconnect to Server.
 
+
+* Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.
+
+USE Student_management;
+SELECT S.StudentName, Sub.SubName, M.Mark
+from Student S
+join Mark M on S.StudentId = M.StudentId
+join Subject Sub on Sub.SubId = M.SubId
+order by Mark DESC, StudentName ASC;
+
+
