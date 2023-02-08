@@ -1,5 +1,5 @@
 # module-03-database
-[Bài tập] Truy vấn dữ liệu với CSDL Quản lý sinh viên
+# [Bài tập] Truy vấn dữ liệu với CSDL Quản lý sinh viên
 * Hiển thị tất cả các sinh viên có tên bắt đầu bảng ký tự ‘h’
 
 USE Student_management;
@@ -46,3 +46,4 @@ join Subject Sub on Sub.SubId = M.SubId
 order by Mark DESC, StudentName ASC;
 
 
+# [Bài tập] Thao tác với CSDL Quản lý bán hàng
